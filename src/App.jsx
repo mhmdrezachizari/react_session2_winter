@@ -1,10 +1,11 @@
 import './App.css'
+import Alireza from './components/Alireza'
 
 function App() {
 
   return (
 <>
-<h1>salam</h1>
+<Alireza/>
 </>
   )
 }
