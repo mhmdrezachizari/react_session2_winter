@@ -1,11 +1,20 @@
 import './App.css'
-import Alireza from './components/Alireza'
+import Card from './components/Card'
 
 function App() {
-
+const ListProduct = [
+  {name:"iphone11", price:120000 , id:1},
+  {name:"iphone12", price:130000 , id:2},
+  {name:"iphone13", price:140000 , id:3},
+  {name:"iphone14", price:150000 , id:4},
+]
   return (
 <>
-<Alireza/>
+{
+  ListProduct.map(item=>{
+    return <Card data={item}/>
+  })
+}
 </>
   )
 }
